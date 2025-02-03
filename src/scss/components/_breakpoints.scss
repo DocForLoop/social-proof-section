@@ -1,1 +1,69 @@
 @use '@scss/global/functions' as *;
+
+@media (width > em(1201)){
+    .review {
+        align-items: stretch;
+        padding-inline: fluid(24, 165, 1201, 1440);
+        background-image: url('../assets/images/bg-pattern-top-desktop.svg'), url('../assets/images/bg-pattern-bottom-desktop.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: left top, right bottom;
+
+        &__content-wrapper {
+            flex-direction: row;
+            align-items: center;
+            column-gap: fluid(39, 125, 1201, 1440);;
+            text-align: start;
+            max-inline-size: unset;
+        }
+
+        &__content {
+            align-items: start;
+        }
+
+        &__desc {
+            max-inline-size: 40ch;
+        }
+
+        &__stars {
+            flex-direction: row;
+            column-gap: 32.45px;
+            padding-block: 19.5px;
+            padding-inline-start: 33px;
+            padding-inline-end: 47px;
+        }
+
+        &__stars--guru {
+            transform: translate(rem(48));
+        }
+
+        &__stars--best {
+            transform: translate(rem(95));
+        }
+
+        &__customer-sections {
+            flex-direction: row;
+            max-inline-size: unset;
+        }
+
+        &__customer-wrapper {
+            row-gap: 31px;
+        }
+
+        &__customer-wrapper--irene {
+            transform: translateY(rem(16));
+            padding-inline-end: 33px;
+        }
+
+        &__customer-wrapper--anne {
+            transform: translateY(rem(32));
+        }
+
+        &__customer-text {
+            max-inline-size: 28.7ch;
+        }
+        
+        &__customer-text--irene {
+            padding-inline-end: 3px;
+        }
+    }
+}

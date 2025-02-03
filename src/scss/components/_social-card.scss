@@ -1,15 +1,24 @@
 @use '@scss/global/functions' as *;
 
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
 .review {
-    padding-inline: fluid(24, 165, 375, 1440);
+    padding-inline: 24px;
     padding-block-start: fluid(82, 118, 375, 1440);
-    padding-block-end: 99px;
+    padding-block-end: 131px;
     background-image: url('../assets/images/bg-pattern-top-mobile.svg'), url('../assets/images/bg-pattern-bottom-mobile.svg');
     background-repeat: no-repeat, no-repeat;
-    background-position: top left, bottom right;
+    background-position: left top, right bottom;
+    max-inline-size: rem(1440);
 
     &__content-wrapper {
         text-align: center;
+        inline-size: 100%;
+        max-inline-size: rem(420);
     }
 
     &__title {
@@ -25,7 +34,6 @@
         letter-spacing: var(--ls-body-secondary);
         max-inline-size: 43ch;
         color: var(--clr-text-dark);
-
     }
 
     &__stars {
@@ -44,6 +52,11 @@
         font-weight: var(--fw-3);
         color: var(--clr-primary);
         line-height: 1;
+    }
+
+    &__customer-sections {
+        inline-size: 100%;
+        max-inline-size: rem(420);
     }
 
     &__customer-wrapper {

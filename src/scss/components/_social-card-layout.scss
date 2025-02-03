@@ -7,11 +7,9 @@
     row-gap: fluid(49, 71, 375, 1400);
 
     &__content-wrapper {
-        inline-size: 100%;
         display: flex;
         flex-direction: column;
-        gap: fluid(39, 125, 375, 1440);
-        max-inline-size: rem(420);
+        row-gap: 39px;
     }
 
     &__content {
@@ -36,15 +34,13 @@
 
     &__stars-list {
         display: flex;
-        column-gap: 8.45px;
+        column-gap: 9px;
     }
 
     &__customer-sections {
         display: flex;
         flex-direction: column;
         gap: fluid(16, 30, 375, 1440);
-        inline-size: 100%;
-        max-inline-size: rem(420);
     }
 
     &__customer {
