@@ -1,1 +1,78 @@
 @use '@scss/global/functions' as *;
+
+.review {
+    padding-inline: fluid(24, 165, 375, 1440);
+    padding-block-start: fluid(82, 118, 375, 1440);
+    padding-block-end: 99px;
+    background-image: url('../assets/images/bg-pattern-top-mobile.svg'), url('../assets/images/bg-pattern-bottom-mobile.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+
+    &__content-wrapper {
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: var(--fw-3);
+        max-inline-size: 13ch;
+    }
+
+    &__desc {
+        padding-inline: 2px;
+        font-weight: var(--fw-2);
+        font-size: var(--fs-body-secondary);
+        line-height: var(--lh-body-secondary);
+        letter-spacing: var(--ls-body-secondary);
+        max-inline-size: 43ch;
+        color: var(--clr-text-dark);
+
+    }
+
+    &__stars {
+        background-color: var(--clr-star-bg);
+        padding-block-start: 16px;
+        padding-block-end: 15px;
+        border-radius: rem(8);
+    }
+
+    &__star-icon {
+        inline-size: rem(16);
+        block-size: rem(16);
+    }
+
+    &__captions {
+        font-weight: var(--fw-3);
+        color: var(--clr-primary);
+        line-height: 1;
+    }
+
+    &__customer-wrapper {
+        border-radius: rem(8);
+        background-color: var(--clr-primary);
+        color: var(--clr-light);
+        padding-inline: 32px;
+        padding-block-start: 40px;
+        padding-block-end: 35px;
+    }
+
+    &__customer-img {
+        border-radius: 50%;
+        inline-size: rem(40);
+        block-size: rem(40);
+    }
+
+    &__customer-name {
+        font-weight: var(--fw-3);
+    }
+
+    &__customer-status {
+        color: var(--clr-secondary);
+        line-height: 1;
+    }
+    
+    &__customer-text {
+        font-weight: var(--fw-2);
+        letter-spacing: var(--ls-body);
+        max-inline-size: 28ch;
+    }
+}

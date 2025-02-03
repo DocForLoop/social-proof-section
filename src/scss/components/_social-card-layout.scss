@@ -1,1 +1,66 @@
 @use '@scss/global/functions' as *;
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: fluid(49, 71, 375, 1400);
+
+    &__content-wrapper {
+        inline-size: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: fluid(39, 125, 375, 1440);
+        max-inline-size: rem(420);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 17px;
+    }
+
+    &__star-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    
+    &__stars {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    &__stars-list {
+        display: flex;
+        column-gap: 8.45px;
+    }
+
+    &__customer-sections {
+        display: flex;
+        flex-direction: column;
+        gap: fluid(16, 30, 375, 1440);
+        inline-size: 100%;
+        max-inline-size: rem(420);
+    }
+
+    &__customer {
+        display: flex;
+        align-items: center;
+        column-gap: 23px;
+    }
+
+    &__customer-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__customer-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 23px;
+    }
+}

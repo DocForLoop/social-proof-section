@@ -25,11 +25,6 @@ h2 {
     color: var(--clr-primary);
 }
 
-p, li, figcaption {
-    text-wrap: pretty;
-    max-inline-size: 65ch;
-}
-
 img, picture, video, canvas, svg {
     display: block;
     max-inline-size: 100%;
@@ -43,10 +38,10 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-}
-
 a, a:visited, a:active {
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
