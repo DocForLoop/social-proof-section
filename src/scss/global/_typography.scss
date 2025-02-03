@@ -1,2 +1,41 @@
 @use './functions' as * ;
 
+@font-face {
+    font-display: swap;
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/league-spartan-v11-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/league-spartan-v11-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/league-spartan-v11-latin-700.woff2') format('woff2');
+}
+
+:root {
+    --ff-primary: 'League Spartan', 'Arial', 'Helvetica', sans-serif;
+    --fs-h2: #{fluid(40, 56, 375, 1440, rem)};
+    --fs-body: #{rem(17)};
+    --fs-body-secondary: #{rem(19)};
+    --fw-1: 400;
+    --fw-2: 500;
+    --fw-3: 700;
+    --lh-h2: #{fluid(32, 48, 375, 1440, rem)};
+    --lh-body: calc(22 / 17);
+    --lh-body-secondary: calc(25 / 19);
+    --ls-h2: #{fluid(-1.43, -2, 375, 1440, rem)};
+    --ls-body: #{rem(-0.3)};
+    --ls-body-secondary: #{rem(-0.63)};
+}
