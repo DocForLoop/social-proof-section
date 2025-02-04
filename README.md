@@ -20,8 +20,8 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Links
 
-- [Solution](https://www.frontendmentor.io/solutions/)
-- [Live Site](https://docforloop.github.io/)
+- [Solution](https://www.frontendmentor.io/solutions/social-proof-section-with-flexbox-and-grid-XvDrcbaQIg)
+- [Live Site](https://social-proof-section-kappa-gules.vercel.app/)
 
 ## My process
 
@@ -30,6 +30,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Grid
 - Mobile-first workflow
 - [Sass](https://sass-lang.com/) (SCSS for maintainable and modular styles)
 - [Vite](https://vite.dev/) - Build tool for modern web development
